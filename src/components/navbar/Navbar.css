@@ -1,0 +1,130 @@
+.navbar {
+    margin: 3% 15% 0 0;
+    float: right
+}
+
+.header .links {
+    background-color: var(--black);
+    position: fixed;
+    height: 100%;
+    margin: auto;
+    bottom: 0;
+    z-index: 1;
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.header .links li {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.header .links .home {
+    margin-top: 60%;
+}
+
+.header .links li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 45px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 1.5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--white);
+}
+
+.header .burger {
+    background: transparent;
+    border: none;
+}
+
+.header .burger:hover {
+    cursor: pointer;
+}
+
+/* show menu start */
+.header .showNav .burger .burger_line,
+.header .showNav .burger .burger_line::before,
+.header .showNav .burger .burger_line::after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: fixed;
+    border-radius: 3px;
+    background-color: var(--white);
+    transition: all .5s ease-in;
+    z-index: 1;
+}
+
+.header .showNav .burger .burger_line::before,
+.header .showNav .burger .burger_line::after {
+    content: '';
+    position: absolute;
+}
+
+.header .showNav .burger .burger_line::before {
+    transform: translateY(-12px);
+}
+
+.header .showNav .burger .burger_line::after {
+    transform: translateY(12px);
+}
+
+.header .showNav .links {
+    right: 0;
+    width: 100vw;
+    transform: translate(0);
+    transition: all .6s ease-in;
+}
+
+/* Cross start */
+.header .showNav .burger .burger_line {
+    width: 0;
+    background: transparent;
+}
+
+.header .showNav .burger .burger_line::before {
+    transform: rotate(-45deg);
+}
+
+.header .showNav .burger .burger_line::after {
+    transform: rotate(45deg);
+}
+/* Cross end */
+/* show menu end */
+
+/* hidden menu start */
+.header .hideNav .burger .burger_line,
+.header .hideNav .burger .burger_line::before,
+.header .hideNav .burger .burger_line::after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: fixed;
+    border-radius: 3px;
+    background-color: var(--white);
+    transition: all .5s ease-out;
+}
+
+.header .hideNav .burger .burger_line::before,
+.header .hideNav .burger .burger_line::after {
+    content: '';
+    position: absolute;
+}
+
+.header .hideNav .burger .burger_line::before {
+    transform: translateY(-9px);
+}
+
+.header .hideNav .burger .burger_line::after {
+    transform: translateY(9px);
+}
+
+.header .hideNav .links {
+    right: 0;
+    width: 100vw;
+    transform: translate(200vh);
+    transition: all .6s ease-in;
+}
+/* hidden menu end */

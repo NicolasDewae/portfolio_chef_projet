@@ -1,0 +1,9 @@
+.service {
+    background: var(--black);
+    text-align: center;
+    color: var(--white);
+}
+
+.service .service_content {
+    padding: 50px 0;
+}

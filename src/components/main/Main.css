@@ -1,0 +1,16 @@
+.main_content h1 {
+    margin: 0;
+    padding: 100% 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--white);
+    /* width: 100%; */
+}
+
+.main {
+    background-image: url("C:\Users\USER\Pictures\photo Ecommerce\lille\high\lille_high-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
