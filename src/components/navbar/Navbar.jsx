@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { useState } from 'react';
+import { navLink } from '../../config/i18n';
 
 const Navbar = () => {
     const [showLinks, setShowLinks] = useState(false);
@@ -8,20 +9,39 @@ const Navbar = () => {
         setShowLinks(!showLinks);
     }
 
+    const [translate, setTranslate] = useState(false);
+    const handleTranslate = () => {
+        setTranslate(!translate);
+    }
+    
     return (
         <>
             <div className="header">
                 <div className={`navbar ${showLinks ? "showNav" : "hideNav"}` }>
                     <ul className='links'>
-                        <li className='home'><a href="/">Home</a></li>
-                        <li><a href="/propos">A propos</a></li>
-                        <li><a href="/prestations">Mes prestations</a></li>
-                        <li><a href="/travaux">Mes travaux</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        {navLink.map((link) => {
+                            link = translate ? link.fr : link.en;
+                            return (
+                                link.map((item) => {
+                                    return (
+                                        <li>
+                                            <a href={item.url}>{item.title}</a>
+                                        </li>
+                                    )
+                                })
+                            )
+                        })}
                     </ul>
-                    <button className="burger" onClick={handleToggle}>
-                        <span className='burger_line'></span>
-                    </button>
+                    <div className='divBtn'>
+                        <button className='translateBtn' onClick={handleTranslate}>
+                            <p className='translate'>
+                                {translate ? 'Fr' : 'En'}
+                            </p>
+                        </button>
+                        <button className="burger" onClick={handleToggle}>
+                            <span className='burger_line'></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </>
