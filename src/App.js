@@ -2,8 +2,9 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Main from './components/main/Main';
 import About from './components/about/About';
-import Service from './components/service/Service';
+import ServicesList from './components/servicesList/ServicesList';
 import Contact from './components/contact/Contact';
+import { servicesListData } from './config/i18n';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Navbar />
       <Main />
       <About />
-      <Service />
+      <ServicesList servicesListData={servicesListData} />
       <Contact />
     </div>
   );
