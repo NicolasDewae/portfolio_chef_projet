@@ -11,10 +11,12 @@ const Contact = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                         quia, voluptas, voluptate.
                     </p>
-                    <form className="contact-form" action="" method="POST">
+                    <form className="contact_form" action="" method="POST">
                         <input type="hidden" name="_next" value="/contact"/>
                         <div>
                             <input type="text" name="firstname" placeholder="Firstname"/>
+                        </div>
+                        <div>
                             <input type="text" name="lastname" placeholder="Lastname"/>
                         </div>
                         <div>
@@ -27,7 +29,7 @@ const Contact = () => {
                             <input type="hidden" name="_captcha" value="true"/>
                         </div>
                         <div>
-                            <button type="submit">Send</button>
+                            <button type="submit">Envoyer</button>
                         </div>
                     </form>
                 </div>
