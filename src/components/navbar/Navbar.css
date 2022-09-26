@@ -20,7 +20,7 @@
     text-transform: uppercase;
 }
 
-.header .links .home {
+.header .links li:first-child  {
     margin-top: 60%;
 }
 
@@ -30,7 +30,23 @@
     padding: 15px 45px;
     font-family: 'Playfair Display SC', serif;
     letter-spacing: 1.5px;
-    font-family: 'Courier New', Courier, monospace;
+    color: var(--white);
+}
+
+
+.header .translateBtn {
+    background: transparent;
+    border: none;
+    position: fixed;
+    top: 1%;
+    right: 88%;
+}
+
+.header .translateBtn:hover {
+    cursor: pointer;
+}
+
+.header .translate {
     color: var(--white);
 }
 

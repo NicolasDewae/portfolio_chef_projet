@@ -1,0 +1,61 @@
+.contact {
+    background-image: url("C:\Users\USER\Pictures\photo Ecommerce\lille\high\lille_high-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact_content {
+    padding: 40px 0;
+}
+.contact_content h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--white);
+}
+
+.contact_content p {
+    text-align: center;
+    margin: 30px 0;
+    color: var(--white);
+}
+
+.contact_form {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_form input {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    border: 2px solid var(--white);
+    background: transparent;
+}
+
+.contact_form textarea {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    border: 2px solid var(--white);
+    background: transparent;
+}
+
+.contact_form button {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    border: 2px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
