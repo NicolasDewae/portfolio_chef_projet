@@ -1,22 +1,46 @@
 import React from "react";
 import "./About.css";
+import { motion } from 'framer-motion';
+import { about } from "../../config/i18n"
+import { useState } from 'react';
 
 const About = () => {
+
+    const [translate, setTranslate] = useState(false);
+    const handleTranslate = () => {
+        setTranslate(!translate);
+    }
+
     return (
         <>
             <div className="about">
-                <div className="about_content">
-                    <h1>A propos</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                        quia, voluptas, voluptate, voluptatum quod quibusdam dolorem
-                        quidem quos iure voluptates et. Quisquam, quae. Repudiandae
-                        voluptates quae, quod quia voluptatem voluptatum.
-                    </p>
+                <motion.div className="about_content"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: false }}
+                        transition={{ duration: 0.5 }}
+                        variants={{
+                        visible: { opacity: 1, scale: 1},
+                        hidden: { opacity: 0, scale: 0 },
+                        }}    
+                >
+                        {about.map((items) => {
+                            items = translate ? items.fr : items.en;
+                            return (
+                                items.map((item) => {
+                                    return (
+                                        <>
+                                            <h1>{item.title}</h1>
+                                            <p>{item.description}</p>
+                                        </>
+                                    )
+                                })
+                            )
+                        })}
                     <div className="btn">
                         <a href="/apropos">Me découvrir</a>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </>
     );
