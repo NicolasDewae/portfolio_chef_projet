@@ -33,23 +33,6 @@
     color: var(--white);
 }
 
-
-.header .translateBtn {
-    background: transparent;
-    border: none;
-    position: fixed;
-    top: 1%;
-    right: 88%;
-}
-
-.header .translateBtn:hover {
-    cursor: pointer;
-}
-
-.header .translate {
-    color: var(--grey);
-}
-
 .header .burger {
     background: transparent;
     border: none;

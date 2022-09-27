@@ -1,17 +1,27 @@
 import React from "react";
 import "./ServicesList.css";
-import Service from "../service/Service";
+import { servicesListData } from '../../config/i18n';
 
-const ServiceList = ({ servicesListData }) => {
-    
+const ServiceList = ( translate ) => {
     return (
         <>
             <div className="service">
                 <div className="service_content">
                     <div className="service_list">
-                        {servicesListData.map((serviceData) => (
-                            <Service servicesListData={serviceData} key={serviceData.title} />
-                        ))}
+                        {servicesListData.map((serviceData) => {
+                            serviceData = translate.data ? serviceData.fr : serviceData.en;
+                            return (
+                                serviceData.map((item) => {
+                                    return (
+
+                                        <div className="service_item">
+                                            <h2>{item.title}</h2>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    )
+                                })
+                            )
+                        })}
                     </div>
                 </div>
             </div>

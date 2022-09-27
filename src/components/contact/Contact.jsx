@@ -1,16 +1,25 @@
 import React from "react";
 import "./Contact.css";
+import { contact } from '../../config/i18n';
 
-const Contact = () => {
+const Contact = ( translate ) => {
     return (
         <>
             <div className="contact">
                 <div className="contact_content">
-                    <h1>Intéressé par mon profil ?</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                        quia, voluptas, voluptate.
-                    </p>
+                    {contact.map((contactData) => {
+                        contactData = translate.data ? contactData.fr : contactData.en;
+                        return (
+                            contactData.map((item) => {
+                                return (
+                                    <>
+                                        <h1>{item.title}</h1>
+                                        <p>{item.description}</p>
+                                    </>
+                                )
+                            })
+                        )
+                    })}
                     <form className="contact_form" action="" method="POST">
                         <input type="hidden" name="_next" value="/contact"/>
                         <div>

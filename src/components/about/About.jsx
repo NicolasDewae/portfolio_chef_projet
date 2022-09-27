@@ -2,14 +2,9 @@ import React from "react";
 import "./About.css";
 import { motion } from 'framer-motion';
 import { about } from "../../config/i18n"
-import { useState } from 'react';
 
-const About = () => {
+const About = (translate) => {
 
-    const [translate, setTranslate] = useState(false);
-    const handleTranslate = () => {
-        setTranslate(!translate);
-    }
 
     return (
         <>
@@ -25,7 +20,7 @@ const About = () => {
                         }}    
                 >
                         {about.map((items) => {
-                            items = translate ? items.fr : items.en;
+                            items = translate.data ? items.fr : items.en;
                             return (
                                 items.map((item) => {
                                     return (
