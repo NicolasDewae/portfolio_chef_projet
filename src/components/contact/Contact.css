@@ -1,5 +1,5 @@
 .contact {
-    background-image: url("C:\Users\USER\Pictures\photo Ecommerce\lille\high\lille_high-2.jpg");
+    background-image: url("../../../public/assets/img/building.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,13 +12,13 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    color: var(--white);
+    color: var(--black);
 }
 
 .contact_content p {
     text-align: center;
     margin: 30px 0;
-    color: var(--white);
+    color: var(--black);
 }
 
 .contact_form {
