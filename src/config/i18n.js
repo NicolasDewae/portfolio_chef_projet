@@ -71,7 +71,7 @@ export const contact = [
         fr: [
             {
                 title: 'Contactez moi',
-                description: '',
+                description: 'Si vous avez des questions ou si vous voulez me contacter, vous pouvez me contacter à l\'adresse suivante:',
                 image: '',
                 phone: '06 00 00 00 00',
                 email: 'monEmail@mail.fr',
