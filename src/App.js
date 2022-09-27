@@ -4,16 +4,27 @@ import Main from './components/main/Main';
 import About from './components/about/About';
 import ServicesList from './components/servicesList/ServicesList';
 import Contact from './components/contact/Contact';
-import { servicesListData } from './config/i18n';
+import { useState } from 'react';
+
 
 function App() {
+  const [translate, setTranslate] = useState(false);
+  const handleTranslate = () => {
+      setTranslate(!translate);
+  }
   return (
     <div className="App">
-      <Navbar />
+      {/* Translation button */}
+      <button className='translateBtn' onClick={handleTranslate}>
+        <p className='translate'>
+            {translate ? 'Fr' : 'En'}
+        </p>
+      </button>
+      <Navbar data={translate} />
       <Main />
-      <About />
-      <ServicesList servicesListData={servicesListData} />
-      <Contact />
+      <About data={translate} />
+      <ServicesList data={translate} />
+      <Contact data={translate} />
     </div>
   );
 }

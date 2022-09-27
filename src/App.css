@@ -2,4 +2,21 @@ body {
   --grey: rgb(155, 155, 155);
   --black: rgb(32, 32, 32);
   --white: rgb(235, 235, 235);
+
+}
+
+.App .translateBtn {
+    background: transparent;
+    border: none;
+    position: fixed;
+    top: 1%;
+    right: 88%;
+}
+
+.App .translateBtn:hover {
+    cursor: pointer;
+}
+
+.App .translate {
+    color: var(--grey);
 }
