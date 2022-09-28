@@ -5,7 +5,7 @@ import About from './components/about/About';
 import ServicesList from './components/servicesList/ServicesList';
 import Contact from './components/contact/Contact';
 import { useState } from 'react';
-
+import Timeline from './components/timeline/Timeline';
 
 function App() {
   const [translate, setTranslate] = useState(false);
@@ -23,6 +23,7 @@ function App() {
       <Navbar data={translate} />
       <Main />
       <About data={translate} />
+      <Timeline data={translate} />
       <ServicesList data={translate} />
       <Contact data={translate} />
     </div>
