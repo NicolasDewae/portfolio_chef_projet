@@ -13,6 +13,7 @@
 
 .about_content p {
     text-align: center;
+    padding: 0 20px;
 }
 .about_content .btn {
     font-size: 12px;

@@ -26,9 +26,9 @@ const Navbar = (translate) => {
                             )
                         })}
                     </ul>
-                        <button className="burger" onClick={handleToggle}>
-                            <span className='burger_line'></span>
-                        </button>
+                    <button className="burger" onClick={handleToggle}>
+                        <span className='burger_line'></span>
+                    </button>
                 </div>
             </div>
         </>
