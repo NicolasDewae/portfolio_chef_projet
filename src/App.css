@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@200&display=swap');
 body {
-  --grey: rgb(155, 155, 155);
-  --black: rgb(32, 32, 32);
-  --white: rgb(235, 235, 235);
+    --grey: rgb(155, 155, 155);
+    --black: rgb(32, 32, 32);
+    --white: rgb(235, 235, 235);
 
+    --pFont: 'Cinzel', serif;
+    --hFont: 'Montserrat', sans-serif;
+    
+    /* desktop */
+    --desktopPSize: 1.5rem;
+    --desktopH1Size: 5rem;
+    --desktopH2Size: 2.5rem;
+    --desktopH3Size: 2rem;
+
+    /* tablet */
+    --tabletPSize: 1.2rem;
+    --tabletH1Size: 2.5rem;
+    --tabletH2Size: 2rem;
+    --tabletH3Size: 1.5rem;
+  
+    /* mobile */
+    --mobilePSize: 0.9rem;
+    --mobileH1Size: 2.5rem;
+    --mobileH2Size: 2rem;
+    --mobileH3Size: 1.5rem;
 }
 
 .App .translateBtn {
@@ -19,4 +40,24 @@ body {
 
 .App .translate {
     color: var(--grey);
+}
+
+h1 {
+    font-family: var(--hFont);
+    font-size: var(--mobileH1Size);
+}
+
+h2 {
+    font-family: var(--hFont);
+    font-size: var(--mobileH2Size);
+}
+
+p {
+    font-family: var(--pFont);
+    font-size: var(--mobilePSize);
+}
+
+a {
+    font-family: var(--pFont);
+    font-size: var(--mobilePSize);
 }

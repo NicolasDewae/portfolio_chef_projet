@@ -27,7 +27,6 @@
 .header .links li a {
     text-decoration: none;
     padding: 15px 45px;
-    font-family: 'Playfair Display SC', serif;
     letter-spacing: 1.5px;
     color: var(--white);
 }
@@ -130,7 +129,7 @@
 @media screen and (min-width: 768px) {
     .header .links li {
         padding: 2rem;
-        font-size: 1.5rem;
+        font-size: var(--tabletPSize);
     }
 
     .header .links li:first-child  {
@@ -163,7 +162,6 @@
     .header .links li a {
         float: inline-start;
         color: var(--black);
-        font-size: 1rem;
         padding: 0;
         letter-spacing: 1px;
     }
