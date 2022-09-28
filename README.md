@@ -1,9 +1,7 @@
 # Portfolio in ReactJs
 
 > **Warning**
-> ## It's in progress, the mobile format is almost done
-
-I am currently working on the French/English translation of the portfolio at the click of a button
+> ## It's in progress
 
 If you want to clone the repository:
 
