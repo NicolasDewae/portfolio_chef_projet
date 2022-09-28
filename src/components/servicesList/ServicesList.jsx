@@ -13,7 +13,7 @@ const ServiceList = ( translate ) => {
                             return (
                                 serviceData.map((item) => {
                                     return (
-
+                                        
                                         <div className="service_item">
                                             <h2>{item.title}</h2>
                                             <p>{item.description}</p>
