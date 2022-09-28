@@ -163,3 +163,111 @@ export const navLink = [
     ],
     }
 ]
+
+export const timeline = [
+    {
+        fr: [
+                {
+                    id: 1,
+                    title: '2019 - 2020',
+                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                },
+                {
+                    id: 2,
+                    title: '2018 - 2019',
+                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                },
+                {
+                    id: 3,
+                    title: '2017 - 2018',
+                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                },
+                {
+                    id: 4,
+                    title: '2016 - 2017',
+                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                }
+        ],
+        en: [
+            {
+                id: 1,
+                title: '2019 - 2020',
+                description: 'I am currently in a web and mobile developer training at O\'clock school',
+            },
+            {
+                id: 2,
+                title: '2018 - 2019',
+                description: 'I am currently in a web and mobile developer training at O\'clock school',
+            },
+            {
+                id: 3,
+                title: '2017 - 2018',
+                description: 'I am currently in a web and mobile developer training at O\'clock school',
+            },
+            {
+                id: 4,
+                title: '2016 - 2017',
+                description: 'I am currently in a web and mobile developer training at O\'clock school',
+            }
+        ]
+    }
+]
+
+export const form = [
+    {
+        fr: [
+                {
+                    id: 1,
+                    name: 'Nom',
+                    placeholder: 'Votre nom',
+                },
+                {
+                    id: 2,
+                    name: 'Prénom',
+                    placeholder: 'Votre prénom',
+                },
+                {
+                    id: 3,
+                    name: 'email',
+                    placeholder: 'Votre email',
+                },
+                {
+                    id: 4,
+                    name: 'Message',
+                    placeholder: 'Message',
+                },
+                {
+                    id: 5,
+                    name: 'submit',
+                    title: 'Envoyer',
+                }
+        ],
+        en: [
+            {
+                id: 1,
+                name: 'Name',
+                placeholder: 'Your name',
+            },
+            {
+                id: 2,
+                name: 'First name',
+                placeholder: 'Your first name',
+            },
+            {
+                id: 3,
+                name: 'email',
+                placeholder: 'Your email',
+            },
+            {
+                id: 4,
+                name: 'Message',
+                placeholder: 'Message',
+            },
+            {
+                id: 5,
+                name: 'submit',
+                title: 'Send',
+            }
+        ]
+    }
+]
