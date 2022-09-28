@@ -1,5 +1,8 @@
 .contact {
-    background-image: url("../../assets/img/building.webp");
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.425),
+        var(--black)
+    ), url("../../assets/img/building.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,6 +11,11 @@
 .contact_content {
     padding: 40px 20px;
 }
+
+.contact_content p {
+    padding: 0 20px;
+}
+
 .contact_content h1 {
     text-align: center;
     text-transform: uppercase;
@@ -36,6 +44,11 @@
     height: 50px;
     border: 2px solid var(--white);
     background: transparent;
+}
+
+.contact_form input::placeholder, textarea::placeholder {
+    color: var(--white);
+    text-align: center;
 }
 
 .contact_form textarea {
