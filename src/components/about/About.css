@@ -1,12 +1,14 @@
+.about {
+    background-color: var(--black);
+}
 .about_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: white;
-    color: var(--black);
-    padding: 0 1rem;
+    color: var(--white);
+    padding: 0 20px;
 }
 
 .about_content p {
@@ -17,10 +19,10 @@
     font-weight: 600;
     margin: 20px 0 0 0;
     padding: 0.8rem 5rem;
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 .about_content a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
 }
