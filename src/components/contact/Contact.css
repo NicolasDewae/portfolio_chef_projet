@@ -1,12 +1,12 @@
 .contact {
-    background-image: url("../../../public/assets/img/building.webp");
+    background-image: url("../../assets/img/building.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .contact_content {
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 .contact_content h1 {
     text-align: center;
