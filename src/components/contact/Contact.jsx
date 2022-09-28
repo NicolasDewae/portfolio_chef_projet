@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { contact } from '../../config/i18n';
+import { contact, form } from '../../config/i18n';
 
 const Contact = ( translate ) => {
     return (
@@ -22,24 +22,31 @@ const Contact = ( translate ) => {
                     })}
                     <form className="contact_form" action="" method="POST">
                         <input type="hidden" name="_next" value="/contact"/>
-                        <div>
-                            <input type="text" name="firstname" placeholder="Firstname"/>
-                        </div>
-                        <div>
-                            <input type="text" name="lastname" placeholder="Lastname"/>
-                        </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Email Address"/>
-                        </div>
-                        <div>
-                            <textarea type="text" name="message" placeholder="Message"/>
-                        </div>
-                        <div>
-                            <input type="hidden" name="_captcha" value="true"/>
-                        </div>
-                        <div>
-                            <button type="submit">Envoyer</button>
-                        </div>
+                        {form.map((formData) => {
+                            formData = translate.data ? formData.fr : formData.en;
+                            return (
+                                <>
+                                    <div>
+                                        <input type="text" name="firstname" placeholder={ formData[0].placeholder } />
+                                    </div>
+                                    <div>
+                                        <input type="text" name="lastname" placeholder={ formData[1].placeholder } />
+                                    </div>
+                                    <div>
+                                        <input type="email" name="email" placeholder={ formData[2].placeholder } />
+                                    </div>
+                                    <div>
+                                        <textarea type="text" name="message" placeholder={ formData[3].placeholder } />
+                                    </div>
+                                    <div>
+                                        <input type="hidden" name="_captcha" value="true"/>
+                                    </div>
+                                    <div>
+                                        <button type="submit">{ formData[4].title }</button>
+                                    </div>
+                                </>
+                            )
+                        })}
                     </form>
                 </div>
             </div>
