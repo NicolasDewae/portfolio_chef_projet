@@ -5,10 +5,9 @@ import { about } from "../../config/i18n"
 
 const About = (translate) => {
 
-
     return (
         <>
-            <div className="about">
+            <div id="about">
                 <motion.div className="about_content"
                         initial="hidden"
                         whileInView="visible"
@@ -27,14 +26,14 @@ const About = (translate) => {
                                         <>
                                             <h1>{item.title}</h1>
                                             <p>{item.description}</p>
+                                            <button>
+                                                {item.button}
+                                            </button>
                                         </>
                                     )
                                 })
                             )
                         })}
-                    <div className="btn">
-                        <a href="/apropos">Me découvrir</a>
-                    </div>
                 </motion.div>
             </div>
         </>
