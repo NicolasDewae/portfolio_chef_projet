@@ -1,11 +1,4 @@
-.main_content h1 {
-    margin: 0;
-    padding: 100% 0;
-    text-align: center;
-    color: var(--white);
-}
-
-.main {
+#main {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.096),
         var(--black)
@@ -13,8 +6,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* height: 150vh; */
 }
+
+.main_content h1 {
+    margin: 0;
+    padding: 100% 0;
+    text-align: center;
+    color: var(--white);
+}
+
 
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -35,7 +35,7 @@
 
 /* desktop */
 @media screen and (min-width: 1500px) {
-    .main {
+    #main {
         height: 180vh;
     }
 }
