@@ -1,13 +1,12 @@
 import React from "react";
 import "./Timeline.css";
 import { timeline } from '../../config/i18n';
-import calendarIcon from '../../assets/icons/calendar_month.png';
-
+// import calendarMonth from '../../assets/icons/calendar_month.png';
 
 const Timeline = ( translate ) => {
     return (
         <>
-            <div className="timeline">
+            <div id="timeline">
                 <div className="timeline_content">
                     <div className="timeline_list">
                         {timeline.map((timelineData) => {
@@ -19,16 +18,32 @@ const Timeline = ( translate ) => {
                                             <div className="timeline_item">
                                                 <div className="timeline_item_content">
                                                     <div className="timeline_item_content_title">
+                                                        {/* <h3>{item.date}</h3> */}
                                                         <h2>{item.title}</h2>
+                                                        <h3>{item.company}</h3>
                                                     </div>
-                                                    <div className="timeline_item_content_description">
-                                                        <p>{item.description}</p>
-                                                    </div>
+                                                        {/* loop for description elements */}
+                                                        {Object.values(item.description).map((description, index) => {
+                                                            return (
+                                                                <div key={index} className="timeline_item_content_description">
+                                                                    <p>{description}</p>
+                                                                </div>
+                                                            )
+                                                        })}
                                                 </div>
                                                 <div className="time">
                                                     <div className="timeline_line left">
                                                     </div>
-                                                    <img src={calendarIcon} alt="" />
+                                                    <div className="calendar">
+                                                        <p>
+                                                            {item.startDate}
+                                                            <p>-</p>
+                                                            {/* <div>
+                                                                <img src={calendarMonth} alt="" />
+                                                            </div> */}
+                                                            {item.endDate}
+                                                        </p>
+                                                    </div>
                                                     <div className="timeline_line right">
                                                     </div>
                                                 </div>
