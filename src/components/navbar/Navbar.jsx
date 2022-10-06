@@ -10,7 +10,7 @@ const Navbar = (translate) => {
     }
     return (
         <>
-            <div className="header">
+            <div id="header">
                 <div className={`navbar ${showLinks ? "showNav" : "hideNav"}` }>
                     <ul className='links'>
                         {navLink.map((link) => {
@@ -19,7 +19,7 @@ const Navbar = (translate) => {
                                 link.map((item) => {
                                     return (
                                         <li>
-                                            <a href={item.url}>{item.title}</a>
+                                            <a onClick={handleToggle} href={item.url}>{item.title}</a>
                                         </li>
                                     )
                                 })
