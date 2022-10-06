@@ -52,6 +52,11 @@ h2 {
     font-size: var(--mobileH2Size);
 }
 
+h3 {
+    font-family: var(--hFont);
+    font-size: var(--mobileH3Size);
+}
+
 p {
     font-family: var(--pFont);
     font-size: var(--mobilePSize);
