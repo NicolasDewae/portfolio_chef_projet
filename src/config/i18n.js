@@ -3,45 +3,29 @@ export const servicesListData = [
         fr: [
                 {
                     id: 1,
-                    title: 'Développement Web',
-                    description: 'Je peux créer une application web magnifique et scalable en utilisant HTML, CSS et React.js',
-                },
-                {
-                    id: 2,
-                    title: 'Développement d\'application mobile',
-                    description: 'Je peux créer une application mobile magnifique et scalable en utilisant React Native',
-                },
-                {
-                    id: 3,
-                    title: 'Développement de logiciel',
-                    description: 'Je peux créer un logiciel en utilisant C++',
-                },
-                {
-                    id: 4,
-                    title: 'UI/UX Design',
-                    description: 'Je peux créer une interface utilisateur magnifique et scalable en utilisant Figma',
+                    title: 'Compétences professionnelles',
+                    description:
+                        {
+                            un:     'Méthodologie de projets en agile / cycle en V',
+                            deux:   'Gestion de projets et de budgets',
+                            trois:  'Management d\'une ou plusieurs équipes',
+                            quatre: 'Mise en place de formation',
+                            cinq:   'Bonne connaissance des flux SI'
+                        }
                 }
         ],
         en: [
             {
                 id: 1,
-                title: 'Web Development',
-                description: 'I can build a beautiful and scalable SPA using HTML, CSS and React.js',
-            },
-            {
-                id: 2,
-                title: 'Mobile App Development',
-                description: 'I can build a beautiful and scalable mobile app using React Native',
-            },
-            {
-                id: 3,
-                title: 'Software Development',
-                description: 'I can develop a software using C++',
-            },
-            {
-                id: 4,
-                title: 'UI/UX Design',
-                description: 'I can design a beautiful and scalable UI/UX using Figma',
+                title: 'Professional skills',
+                description:
+                    {
+                        un:     'Agile project methodology / V cycle',
+                        deux:   'Project and budget management',
+                        trois:  'Management of one or more teams',
+                        quatre: 'Training set up',
+                        cinq:   'Good knowledge of IT flows'
+                    }
             }
         ]
     }
@@ -52,15 +36,17 @@ export const about = [
     {
         fr: [
                 {
-                    title: 'À propos de moi',
-                    description: 'Je suis un développeur web et un développeur de logiciel. J\'ai de l\'expérience dans la création d\'applications web en utilisant React.js et Node.js. J\'ai aussi de l\'expérience dans la création d\'applications mobile en utilisant React Native. J\'ai de l\'expérience dans le développement de logiciel en utilisant C++.',
+                    title: 'Responsable pôle projets et SI',
+                    description: 'Riche d\'un parcours très transverse dans le pilotage et la gestion de projets dans différents domaine métiers (expertise, bancaire, assurance).',
+                    button: 'Me découvrir'
                 }
         ],
         en: [
-            {
-                title: 'About Me',
-                description: 'I am a full stack web developer and a software developer. I have experience in building web applications using React.js and Node.js. I have also experience in building mobile applications using React Native. I have experience in developing software using C++.',
-            }
+                {
+                    title: 'Project and IT Manager',
+                    description: 'With a very transverse career in the management and management of projects in different business areas (expertise, banking, insurance).',
+                    button: 'Discover me'
+                }
         ],
 
     }
@@ -120,13 +106,13 @@ export const navLink = [
                 },
                 {
                     id: 3,
-                    title: 'Services',
-                    url: '#services',
+                    title: 'Mon parcours',
+                    url: '#timeline',
                 },
                 {
                     id: 4,
-                    title: 'Mes travaux',
-                    url: '#travaux',
+                    title: 'Mes compétences',
+                    url: '#service',
                 },
                 {
                     id: 5,
@@ -135,32 +121,32 @@ export const navLink = [
                 }
         ],
         en: [
-            {
-                id: 1,
-                title: 'Home',
-                url: '#',
-            },
-            {
-                id: 2,
-                title: 'About',
-                url: '#about',
-            },
-            {
-                id: 3,
-                title: 'Services',
-                url: '#services',
-            },
-            {
-                id: 4,
-                title: 'Works',
-                url: '#works',
-            },
-            {
-                id: 5,
-                title: 'Contact',
-                url: '#contact',
-            }
-    ],
+                {
+                    id: 1,
+                    title: 'Home',
+                    url: '#',
+                },
+                {
+                    id: 2,
+                    title: 'About',
+                    url: '#about',
+                },
+                {
+                    id: 3,
+                    title: 'My career',
+                    url: '#timeline',
+                },
+                {
+                    id: 4,
+                    title: 'My skills',
+                    url: '#service',
+                },
+                {
+                    id: 5,
+                    title: 'Contact',
+                    url: '#contact',
+                }
+        ],
     }
 ]
 
@@ -169,46 +155,160 @@ export const timeline = [
         fr: [
                 {
                     id: 1,
-                    title: '2019 - 2020',
-                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                    startDate: '2021',
+                    endDate: 'Aujourd\'hui',
+                    company: 'Mésange Prévoyance',
+                    title: 'Responsable pôle projets & SI',
+                    description: 
+                        {
+                            un:     '- Relais de la direction générale',
+                            deux:   '- Responsable de l\'équipe en charge de la gestion de projets et de solutions informatiques de l\'entreprise (4 personnes)',
+                            trois:  '- Coordonner les projets informatiques, les actions et les projets du groupe avec les infrastructures internes',
+                            quatre: '- Suivi et management des prestataires externes',
+                            cinq:   '- PMO sur l\'ensemble du portefeuille mission de la direction transformation SI applicatifs et métiers'
+                        }
                 },
                 {
                     id: 2,
-                    title: '2018 - 2019',
-                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                    startDate: '2019',
+                    endDate: '2021',
+                    company: 'DSI AXA - MNH France',
+                    title: 'Consultante en transformation et organisation',
+                    description: 
+                        {
+                            un:     '- Chef de projet / PMO sur un projet de transformation transverse à 2 directions',
+                            deux:   '- Appuyer les directions dans les choix politiques et stratégiques',
+                            trois:  '- Travail en équipe avec internes, prestataires, partenaires et externes',
+                            quatre: '- Optimisation et mise en place de processus',
+                            cinq:   '- Encadrement de profil junior',
+                            six:    '- Gestion de projet et des budgets',
+                            sept:   '- Expertise en conformité et règlementation'
+                        }
                 },
                 {
                     id: 3,
-                    title: '2017 - 2018',
-                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                    startDate: '2017',
+                    endDate: '2019',
+                    company: 'Sopra Steria',
+                    title: 'Consultante en innovation digitale',
+                    description: 
+                        {
+                            un:     '- Chef de projet MOA/ PMO en charge du respect des calendriers',
+                            deux:   '- Mission de fusion acquisition (Pilote de mission)',
+                            trois:  '- Responsable d\'une offre innovation en interne (manager d\'équipe)',
+                            quatre: '- Mise en place d\'IHM',
+                            cinq:   '- Création de calendrier d\'évènementiel',
+                            six:    '- Participation aux salons de présentations',
+                            sept:   '- Négociation et assistante juridique'
+                        }
                 },
                 {
                     id: 4,
-                    title: '2016 - 2017',
-                    description: 'Je suis actuellement en formation de développeur web et mobile à l\'école O\'clock',
+                    startDate: '2016',
+                    endDate: '2017',
+                    company: 'Cunningham Lindsey',
+                    title: 'Chef de projet organisation',
+                    description: 
+                        {
+                            un:     '- Mise en place de formation métiers',
+                            deux:   '- Tenue du cahier des charges et pilotage du portefeuille projets',
+                            trois:  '- Digitalisation de processus interne',
+                            quatre: '- Préparation de calendrier et de support de formation'
+                        }
+                },
+                {
+                    id: 5,
+                    startDate: '2011',
+                    endDate: '2017',
+                    company: 'Milieu assuranciel et bancaire',
+                    title: 'Expériences des métiers opérationnels',
+                    description:
+                        {
+                            un:     '- Swisslife: Gestionnaire de souscription en prévoyance et santé de contrat collectif ou individuel',
+                            deux:   '- MNT: contrôleur qualité métier des prestations santé',
+                            trois:  '- BNP Paribas: Gestionnaire de patrimoine',
+                            quatre: '- Axa en agence: Conseillère clientèle'
+                        }
                 }
         ],
         en: [
-            {
-                id: 1,
-                title: '2019 - 2020',
-                description: 'I am currently in a web and mobile developer training at O\'clock school',
-            },
-            {
-                id: 2,
-                title: '2018 - 2019',
-                description: 'I am currently in a web and mobile developer training at O\'clock school',
-            },
-            {
-                id: 3,
-                title: '2017 - 2018',
-                description: 'I am currently in a web and mobile developer training at O\'clock school',
-            },
-            {
-                id: 4,
-                title: '2016 - 2017',
-                description: 'I am currently in a web and mobile developer training at O\'clock school',
-            }
+                {
+                    id: 1,
+                    startDate: '2021',
+                    endDate: 'Today',
+                    company: 'Mésange Prévoyance',
+                    title: 'Responsable pôle projets & SI',
+                    description: 
+                        {
+                            un:     '- Relais de la direction générale',
+                            deux:   '- Responsable de l\'équipe en charge de la gestion de projets et de solutions informatiques de l\'entreprise (4 personnes)',
+                            trois:  '- Coordonner les projets informatiques, les actions et les projets du groupe avec les infrastructures internes',
+                            quatre: '- Suivi et management des prestataires externes',
+                            cinq:   '- PMO sur l\'ensemble du portefeuille mission de la direction transformation SI applicatifs et métiers'
+                        }
+                },
+                {
+                    id: 2,
+                    startDate: '2019',
+                    endDate: '2021',
+                    company: 'DSI AXA - MNH France',
+                    title: 'Consultante en transformation et organisation',
+                    description: 
+                        {
+                            un:     '- Chef de projet / PMO sur un projet de transformation transverse à 2 directions',
+                            deux:   '- Appuyer les directions dans les choix politiques et stratégiques',
+                            trois:  '- Travail en équipe avec internes, prestataires, partenaires et externes',
+                            quatre: '- Optimisation et mise en place de processus',
+                            cinq:   '- Encadrement de profil junior',
+                            six:    '- Gestion de projet et des budgets',
+                            sept:   '- Expertise en conformité et règlementation'
+                        }
+                },
+                {
+                    id: 3,
+                    startDate: '2017',
+                    endDate: '2019',
+                    company: 'Sopra Steria',
+                    title: 'Consultante en innovation digitale',
+                    description: 
+                        {
+                            un:     '- Chef de projet MOA/ PMO en charge du respect des calendriers',
+                            deux:   '- Mission de fusion acquisition (Pilote de mission)',
+                            trois:  '- Responsable d\'une offre innovation en interne (manager d\'équipe)',
+                            quatre: '- Mise en place d\'IHM',
+                            cinq:   '- Création de calendrier d\'évènementiel',
+                            six:    '- Participation aux salons de présentations',
+                            sept:   '- Négociation et assistante juridique'
+                        }
+                },
+                {
+                    id: 4,
+                    startDate: '2016',
+                    endDate: '2017',
+                    company: 'Cunningham Lindsey',
+                    title: 'Chef de projet organisation',
+                    description: 
+                        {
+                            un:     '- Mise en place de formation métiers',
+                            deux:   '- Tenue du cahier des charges et pilotage du portefeuille projets',
+                            trois:  '- Digitalisation de processus interne',
+                            quatre: '- Préparation de calendrier et de support de formation'
+                        }
+                },
+                {
+                    id: 5,
+                    startDate: '2011',
+                    endDate: '2017',
+                    company: 'Milieu assuranciel et bancaire',
+                    title: 'Expériences des métiers opérationnels',
+                    description:
+                        {
+                            un:     '- Swisslife: Gestionnaire de souscription en prévoyance et santé de contrat collectif ou individuel',
+                            deux:   '- MNT: contrôleur qualité métier des prestations santé',
+                            trois:  '- BNP Paribas: Gestionnaire de patrimoine',
+                            quatre: '- Axa en agence: Conseillère clientèle'
+                        }
+                }
         ]
     }
 ]
@@ -234,7 +334,7 @@ export const form = [
                 {
                     id: 4,
                     name: 'Message',
-                    placeholder: 'Message',
+                    placeholder: 'Méssage',
                 },
                 {
                     id: 5,
