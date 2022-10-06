@@ -5,7 +5,7 @@ import { contact, form } from '../../config/i18n';
 const Contact = ( translate ) => {
     return (
         <>
-            <div className="contact">
+            <div id="contact">
                 <div className="contact_content">
                     {contact.map((contactData) => {
                         contactData = translate.data ? contactData.fr : contactData.en;
