@@ -155,10 +155,11 @@ export const timeline = [
         fr: [
                 {
                     id: 1,
-                    startDate: '2021',
-                    endDate: 'Aujourd\'hui',
+                    date: '2021',
                     company: 'Mésange Prévoyance',
                     title: 'Responsable pôle projets & SI',
+                    logo: '../../public/assets/logo/mesange-prevoyance.png',
+                    
                     description: 
                         {
                             un:     '- Relais de la direction générale',
@@ -170,10 +171,10 @@ export const timeline = [
                 },
                 {
                     id: 2,
-                    startDate: '2019',
-                    endDate: '2021',
+                    date: '2019',
                     company: 'DSI AXA - MNH France',
                     title: 'Consultante en transformation et organisation',
+                    logo: '../../public/assets/logo/axa.png',
                     description: 
                         {
                             un:     '- Chef de projet / PMO sur un projet de transformation transverse à 2 directions',
@@ -187,10 +188,10 @@ export const timeline = [
                 },
                 {
                     id: 3,
-                    startDate: '2017',
-                    endDate: '2019',
+                    date: '2017',
                     company: 'Sopra Steria',
                     title: 'Consultante en innovation digitale',
+                    logo: '../../public/assets/logo/sopra-steria.png',
                     description: 
                         {
                             un:     '- Chef de projet MOA/ PMO en charge du respect des calendriers',
@@ -204,10 +205,10 @@ export const timeline = [
                 },
                 {
                     id: 4,
-                    startDate: '2016',
-                    endDate: '2017',
+                    date: '2016',
                     company: 'Cunningham Lindsey',
                     title: 'Chef de projet organisation',
+                    logo: '../../public/assets/logo/cunningham-lindsey.png',
                     description: 
                         {
                             un:     '- Mise en place de formation métiers',
@@ -218,10 +219,10 @@ export const timeline = [
                 },
                 {
                     id: 5,
-                    startDate: '2011',
-                    endDate: '2017',
+                    date: '2011',
                     company: 'Milieu assuranciel et bancaire',
                     title: 'Expériences des métiers opérationnels',
+                    logo: '../../public/assets/logo/banque-assurance.png',
                     description:
                         {
                             un:     '- Swisslife: Gestionnaire de souscription en prévoyance et santé de contrat collectif ou individuel',
@@ -234,10 +235,10 @@ export const timeline = [
         en: [
                 {
                     id: 1,
-                    startDate: '2021',
-                    endDate: 'Today',
+                    date: '2021',
                     company: 'Mésange Prévoyance',
                     title: 'Responsable pôle projets & SI',
+                    logo: '../../public/assets/logo/mesange-prevoyance.png',
                     description: 
                         {
                             un:     '- Relais de la direction générale',
@@ -249,10 +250,10 @@ export const timeline = [
                 },
                 {
                     id: 2,
-                    startDate: '2019',
-                    endDate: '2021',
+                    date: '2019',
                     company: 'DSI AXA - MNH France',
                     title: 'Consultante en transformation et organisation',
+                    logo: '../../public/assets/logo/axa.png',
                     description: 
                         {
                             un:     '- Chef de projet / PMO sur un projet de transformation transverse à 2 directions',
@@ -266,10 +267,10 @@ export const timeline = [
                 },
                 {
                     id: 3,
-                    startDate: '2017',
-                    endDate: '2019',
+                    date: '2017',
                     company: 'Sopra Steria',
                     title: 'Consultante en innovation digitale',
+                    logo: '../../public/assets/logo/sopra-steria.png',
                     description: 
                         {
                             un:     '- Chef de projet MOA/ PMO en charge du respect des calendriers',
@@ -283,10 +284,10 @@ export const timeline = [
                 },
                 {
                     id: 4,
-                    startDate: '2016',
-                    endDate: '2017',
+                    date: '2016',
                     company: 'Cunningham Lindsey',
                     title: 'Chef de projet organisation',
+                    logo: '../../public/assets/logo/cunningham-lindsey.png',
                     description: 
                         {
                             un:     '- Mise en place de formation métiers',
@@ -297,10 +298,10 @@ export const timeline = [
                 },
                 {
                     id: 5,
-                    startDate: '2011',
-                    endDate: '2017',
+                    date: '2011',
                     company: 'Milieu assuranciel et bancaire',
                     title: 'Expériences des métiers opérationnels',
+                    logo: '../../public/assets/logo/banque-assurance.png',
                     description:
                         {
                             un:     '- Swisslife: Gestionnaire de souscription en prévoyance et santé de contrat collectif ou individuel',
