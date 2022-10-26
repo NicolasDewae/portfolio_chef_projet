@@ -65,4 +65,5 @@ p {
 a {
     font-family: var(--pFont);
     font-size: var(--mobilePSize);
+    text-decoration: none;
 }
