@@ -21,10 +21,6 @@
     margin: 0;
 }
 
-.itemUp {
-    /* margin-top: 20px; */
-}
-
 .itemDown {
     margin-top: 330px;
 }
@@ -75,7 +71,6 @@
     left: 45%;
     border: 1em solid black;
     border-color: transparent transparent var(--black) var(--black);
-    box-shadow: 12px 12px 6px 5px rgba(0, 0, 0, 0.1);
     transform: rotate(135deg);
 }
 
