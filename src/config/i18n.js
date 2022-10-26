@@ -155,6 +155,7 @@ export const timeline = [
         fr: [
                 {
                     id: 1,
+                    pathway: 'Mesangeprevoyance',
                     date: '2021',
                     company: 'Mésange Prévoyance',
                     title: 'Responsable pôle projets & SI',
@@ -171,6 +172,7 @@ export const timeline = [
                 },
                 {
                     id: 2,
+                    pathway: 'axa',
                     date: '2019',
                     company: 'DSI AXA - MNH France',
                     title: 'Consultante en transformation et organisation',
@@ -188,6 +190,7 @@ export const timeline = [
                 },
                 {
                     id: 3,
+                    pathway: 'soprasteria',
                     date: '2017',
                     company: 'Sopra Steria',
                     title: 'Consultante en innovation digitale',
@@ -205,6 +208,7 @@ export const timeline = [
                 },
                 {
                     id: 4,
+                    pathway: 'cunninghamlindsey',
                     date: '2016',
                     company: 'Cunningham Lindsey',
                     title: 'Chef de projet organisation',
@@ -219,6 +223,7 @@ export const timeline = [
                 },
                 {
                     id: 5,
+                    pathway: 'assurancebanque',
                     date: '2011',
                     company: 'Milieu assuranciel et bancaire',
                     title: 'Expériences des métiers opérationnels',
@@ -235,6 +240,7 @@ export const timeline = [
         en: [
                 {
                     id: 1,
+                    pathway: 'Mesangeprevoyance',
                     date: '2021',
                     company: 'Mésange Prévoyance',
                     title: 'Responsable pôle projets & SI',
@@ -250,6 +256,7 @@ export const timeline = [
                 },
                 {
                     id: 2,
+                    pathway: 'axa',
                     date: '2019',
                     company: 'DSI AXA - MNH France',
                     title: 'Consultante en transformation et organisation',
@@ -267,6 +274,7 @@ export const timeline = [
                 },
                 {
                     id: 3,
+                    pathway: 'soprasteria',
                     date: '2017',
                     company: 'Sopra Steria',
                     title: 'Consultante en innovation digitale',
@@ -284,6 +292,7 @@ export const timeline = [
                 },
                 {
                     id: 4,
+                    pathway: 'cunninghamlindsey',
                     date: '2016',
                     company: 'Cunningham Lindsey',
                     title: 'Chef de projet organisation',
@@ -298,6 +307,7 @@ export const timeline = [
                 },
                 {
                     id: 5,
+                    pathway: 'assurancebanque',
                     date: '2011',
                     company: 'Milieu assuranciel et bancaire',
                     title: 'Expériences des métiers opérationnels',
