@@ -17,7 +17,6 @@ const Timeline = ( translate ) => {
                                             <div className="timeline_list_item">
                                                 {item.id % 2 !== 0 ? (
                                                     <>
-                                                        {console.log(item.id)}
                                                         <div className="timeline_item itemUp">
                                                             <div className="timeline_item_content contentUp">
                                                                 <div className="timeline_item_content_title">
