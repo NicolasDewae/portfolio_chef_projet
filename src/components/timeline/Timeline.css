@@ -43,7 +43,7 @@
     margin: 3em;
     padding: 1em;
     background: var(--black);
-    transition: transform .2s; /* Animation */
+    transition: transform .2s; /* Animation zoom */
 }
 
 .timeline_item_content:hover {
@@ -84,7 +84,13 @@
     transform: rotate(135deg);
 }
 
-.timeline_item_content .timeline_item_content_title h2, h3 {
+.timeline_item_content .timeline_item_content_title h3 {
+    color: var(--yellow);
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.timeline_item_content .timeline_item_content_title h2 {
     color: var(--white);
     margin: 0 0 20px 0;
     text-align: left;
