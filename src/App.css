@@ -3,6 +3,7 @@ body {
     --grey: rgb(155, 155, 155);
     --black: rgb(32, 32, 32);
     --white: rgb(235, 235, 235);
+    --yellow: rgb(255, 255, 0);
 
     --pFont: 'Cinzel', serif;
     --hFont: 'Montserrat', sans-serif;
@@ -26,20 +27,33 @@ body {
     --mobileH3Size: 1.5rem;
 }
 
-.App .translateBtn {
-    background: transparent;
-    border: none;
+.App .translateBtn, .App .translateBtn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     position: fixed;
     top: 1%;
     right: 88%;
 }
 
-.App .translateBtn:hover {
-    cursor: pointer;
+.App .translateBtn img {
+    border-style: solid;
+    border-width: 1px;
 }
 
-.App .translate {
-    color: var(--grey);
+.App .translateBtn p {
+    position: fixed;
+    top: 1%;
+    right: 70%;
+    font-size: var(--mobilePSize);
+    font-family: var(--pFont);
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--black);
+}
+
+.App .translateBtn:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -66,4 +80,10 @@ a {
     font-family: var(--pFont);
     font-size: var(--mobilePSize);
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .App .translateBtn p {
+        right: 79%;
+    }       
 }
