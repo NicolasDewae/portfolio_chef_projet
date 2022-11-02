@@ -1,3 +1,31 @@
+export const authorInfos = {
+    firstName: 'Nicolas',
+    lastName: 'De waegenaere',
+    email: 'nicolasdewae@protonmail.com',
+    phone: '',
+    address: '',
+    city: '',
+    country: '',
+    linkedin: 'https://www.linkedin.com/in/nicolas-de-waegenaere-959209232/',
+    github: 'https://github.com/NicolasDewae',
+    website: '',
+    about: '',
+}
+
+export const userInfos = {
+    firstName: 'Farah',
+    lastName: 'Ben Mahmoud',
+    email: '',
+    phone: '',
+    address: '',
+    city: '',
+    country: '',
+    linkedin: '',
+}
+
+export const version = '1.0.0';
+
+
 export const servicesListData = [
     {
         fr: [
