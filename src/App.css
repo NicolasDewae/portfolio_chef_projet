@@ -85,5 +85,11 @@ a {
 @media screen and (min-width: 768px) {
     .App .translateBtn p {
         right: 79%;
-    }       
+    }      
+}
+
+@media screen and (min-width: 1024px) {
+    .App .translateBtn p {
+        right: 83%;
+    }      
 }
